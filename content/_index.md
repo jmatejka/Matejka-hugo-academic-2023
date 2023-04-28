@@ -26,18 +26,14 @@ sections:
       view: card
   - block: collection
     content:
-      title: Recent Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
+      title: Publications
       filters:
         folders:
           - publication
-        exclude_featured: true
+        exclude_featured: false
     design:
       columns: '2'
-      view: citation
+      view: compact
   # - block: collection
   #   id: talks
   #   content:
@@ -64,27 +60,10 @@ sections:
         postcode: L3X 3G9
         country: Canada
         country_code: CAN
-      contact_links:
-        - icon: envelope
-          icon_pack: fas
-          link: mailto:justin.matejka@autodesk.com  # For a direct email link, use "mailto:test@example.org".
-        - icon: twitter
-          icon_pack: fab
-          link: https://twitter.com/JustinMatejka
-        - icon: google-scholar
-          icon_pack: ai
-          link: https://scholar.google.com/citations?user=hl0aVwMAAAAJ
-          
+
       # Automatically link email and phone or display as text?
       autolink: true
-      # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
+
     design:
       columns: '2'
 ---
