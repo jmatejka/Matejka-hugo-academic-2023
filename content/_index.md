@@ -27,6 +27,14 @@ sections:
   - block: collection
     content:
       title: Publications
+      
+      # Choose how much pages you would like to display (0 = all pages)
+      count: 0
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
+      
       filters:
         folders:
           - publication
@@ -34,6 +42,7 @@ sections:
     design:
       columns: '2'
       view: compact
+      
   # - block: collection
   #   id: talks
   #   content:
