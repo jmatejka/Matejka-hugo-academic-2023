@@ -12,6 +12,8 @@ sections:
       username: admin
       # Override your bio text from `authors/admin/_index.md`?
       text:
+    design:
+      columns: '2'
 
   - block: collection
     id: featured
@@ -42,7 +44,7 @@ sections:
     design:
       columns: '2'
       view: compact
-      
+
   # - block: collection
   #   id: talks
   #   content:
@@ -74,5 +76,5 @@ sections:
       autolink: true
 
     design:
-      columns: '2'
+      columns: '1'
 ---
